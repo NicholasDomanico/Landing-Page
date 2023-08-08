@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    
+}
+
+.links {
+    display: flex;
+
+}
+
+.logo {
+    display: flex;
+
+}
+
+.intro {
+    display: flex;
+
+}
+
+.random-info {
+    display: flex;
+
+}
+
+.quote {
+    display: flex;
+
+}
+
+.signup {
+    display: flex;
+
+}
+
+.footer {
+    display: flex;
+
+}
