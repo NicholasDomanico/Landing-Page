@@ -128,9 +128,26 @@ h2 {
 
 .quote {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: gray;
     height: 400px;
     min-width: 100%;
+}
+
+blockquote p {
+    font-weight: bolder;
+    font-family: Italic;
+    font-size: 2.5em;
+    color: #1F2937;
+}
+
+blockquote cite {
+    font-weight: bold;
+    font-family: Italic;
+    font-size: 1.5em;
+    color: #1F2937;
 }
 
 .signup {
