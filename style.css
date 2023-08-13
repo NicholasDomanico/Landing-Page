@@ -10,6 +10,13 @@ h4 {
     color: #E5E7EB;
 }
 
+h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+
 .site-wrapper {
     display: flex;
     flex-direction: column;
@@ -81,12 +88,49 @@ h4 {
 
 .random-info {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    min-width: 100%;
+    padding: 20px;
+    background-color: white;
 
+}
+
+.infobox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.infobox {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.box {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #3882F6;
+    margin: 10px;
+    padding: 10px;
 }
 
 .quote {
     display: flex;
-
+    background-color: gray;
+    height: 400px;
+    min-width: 100%;
 }
 
 .signup {
