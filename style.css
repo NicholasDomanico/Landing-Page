@@ -6,18 +6,19 @@
 
 h4 {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     color: #E5E7EB;
 }
 
 h2 {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
     padding: 40px;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .site-wrapper {
@@ -32,24 +33,25 @@ p {
     padding-top: 10px;
     height: 60px;
     width: 100%;
-    background-color: #000813;
+    background-color: black;
+    background-image: url("images/space.jpg");
+    background-position: center; 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #F9FAF8
+    color: #F9FAF8;
+    z-index: 1;
+    position:relative;
 }
 
 .links {
     display: flex;
     justify-content: space-around;
     min-width: 300px;
-    padding: 10px;
-
+    padding-top: 25px;
 }
 
 .intro {
@@ -59,8 +61,10 @@ p {
     height: 300px;
     min-width: 100%;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000813;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    background-image: url("images/space.jpg");
+    background-position: center; 
     color: white;
 
 }
@@ -69,33 +73,37 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 100px;
     width: 300px;
 }
 
 .image {
     display: flex;
-    margin-right: 100px;
-    margin-top: 50px;
+    width: 400px;
 }
 
-.intro .button {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     width: 100px;
     height: 30px;
+    margin: 15px;
+    border-style: solid;
     border-radius: 10px;
+    border-width: 1px;
     background-color: #3882F6;
+    border-color: #3882F6;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
-.intro .button:hover {
+.button:hover {
     background-color: #3277e6;
 }
 
-.intro .button:active {
-    background-color: #ffffff;
-    transition: 0s;
+.button:active {
+    background-color: #1051b9;
 }
 
 .random-info {
@@ -103,9 +111,12 @@ p {
     flex-direction: column;
     align-items: center;
     height: 400px;
-    min-width: 100%;
-    padding: 20px;
-    background-color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-image: url("images/space.jpg");
+    background-position: bottom;
 
 }
 
@@ -113,8 +124,19 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin-bottom: 30px;
+    width: 100%;
+    height: 300px;
+    background-image: url("images/space.jpg");
+    background-size: cover;
+    color: white;
+    
+}
+
+.infobox-wrapper h2 {
+    align-self: flex-start;
+    justify-self: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .infobox {
@@ -128,14 +150,48 @@ p {
 
 .box {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     height: 150px;
     width: 150px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 3px;
     border-radius: 20px;
     border-color: #3882F6;
     margin: 10px;
     padding: 10px;
+    transition: 0.5s;
+
+}
+
+.box:hover {
+    height: 160px;
+    width: 160px;
+    transition: 0.5s;
+}
+
+#planets {
+    background-image: url("images/jupiter.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#technology {
+    background-image: url("images/hubble.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#history {
+    background-image: url("images/history.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#more {
+    background-image: url("images/galaxy.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .quote {
@@ -146,13 +202,15 @@ p {
     background-color: gray;
     height: 400px;
     min-width: 100%;
+    background-image: url("images/space.jpg");
+    background-position: bottom;
 }
 
 blockquote p {
     font-weight: bolder;
     font-family: Italic;
     font-size: 2.5em;
-    color: #1F2937;
+    color: #2c3849;
 }
 
 blockquote cite {
@@ -169,7 +227,8 @@ blockquote cite {
     background-color: white;
     min-width: 100%;
     height: 200px;
-
+    background-image: url("images/space.jpg");
+    background-position: top;
 }
 
 .signupbox {
@@ -179,35 +238,13 @@ blockquote cite {
     justify-content: space-around;
     align-items: center;
     padding: 5px;
-    border-radius: 10px;
-    background-color: #3882F6;
+    border-radius: 50px;
+    background-color: #1F2937;
     color: white;
 }
 
-.signupbox .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 30px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 1px;
-    background-color: #3882F6;
-    border-color: white;
-}
-
-.signupbox .button:hover {
-    background-color: #3277e6;
-}
-
-.signupbox .button:active {
-    background-color: #ffffff;
-    transition: 0s;
-}
-
 .signupbox p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
 
@@ -219,4 +256,6 @@ blockquote cite {
     height: 100px;
     background-color: #000813;
     color: white;
+    background-image: url("images/space.jpg");
+    background-position: bottom;
 }
